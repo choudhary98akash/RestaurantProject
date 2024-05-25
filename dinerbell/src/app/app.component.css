@@ -1,0 +1,14 @@
+.full-background-image {
+    background-image: url('../assets/images/home-bg.png'); /* Replace with your image path */
+    background-size: cover; /* Ensure image covers the entire area */
+    background-position: center center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    height: 100vh; /* Set height to 100% viewport height */
+    width: 100vw; /* Set width to 100% viewport width */
+    min-height: 100%; /* Ensure minimum height covers viewport in all cases */
+    position: fixed; /* Fix the background to the viewport on scroll */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Position at the left of the viewport */
+    z-index: -1; /* Place the background behind content */
+  }
+  
