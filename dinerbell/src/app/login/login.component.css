@@ -103,3 +103,43 @@
         transform: translateX(-20px) scale(1); /* Adjust the value as needed */
     }
 }
+
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 100vh;
+    padding: 2%;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255,0.5);
+    padding: 10% 8%;
+    border-radius: 4px;
+}
+
+
+input,button{
+    border: none;
+    padding: 5%;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+input:hover{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.field{
+    margin: 8px 0px;
+}

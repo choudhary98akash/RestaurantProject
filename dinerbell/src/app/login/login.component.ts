@@ -1,17 +1,21 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { FormPageComponent } from './form-page/form-page.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormPageComponent,LandingPageComponent,CommonModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+verify() {
+throw new Error('Method not implemented.');
+}
   login = false;
+  email = '';
+  otp = '';
 
   showLogin(){
     this.login = true;
