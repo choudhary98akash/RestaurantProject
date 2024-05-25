@@ -1,0 +1,25 @@
+<div class="login-container">
+    <div class="content">
+        <div *ngIf="!login" class="landing-page">
+            <span class="head">Tired of Cooking</span>
+            <span class="head-lower">on Weekends</span>
+            <span class="lower-container">
+                <div class="lower-div">
+                    <span>
+                        <img class="left-arw" src="../../../assets/images/arrow_forward_ios_24dp_FILL0_wght700_GRAD-25_opsz24.png" alt="ani" width="30px">
+                    </span>
+                    <span>
+                        <span (click)="showLogin()" class="btn-book">book a table</span>
+                    </span>
+                    <span>
+                        <img class="right-arw" src="../../../assets/images/arrow_back_ios_24dp_FILL0_wght700_GRAD-25_opsz40.png" alt="ani" width="40px">
+                    </span>
+                </div>
+            </span>
+        </div>
+        <div *ngIf="login">
+            
+        </div>
+        <app-form-page *ngIf ="login"></app-form-page>
+    </div>
+</div>
