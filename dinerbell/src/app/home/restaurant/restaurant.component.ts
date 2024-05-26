@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewChecked, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { data } from '../../menu-data';
 
 @Component({
   selector: 'app-restaurant',
@@ -8,33 +9,24 @@ import { CommonModule } from '@angular/common';
   templateUrl: './restaurant.component.html',
   styleUrl: './restaurant.component.css'
 })
-export class RestaurantComponent {
+export class RestaurantComponent{
+  index = 0 ;
+  menuData = data[this.index];
+
+
+moveright() {
+    this.index = (this.index+1)%data.length;
+    this.menuData = data[this.index];
+  }
+  moveleft() {
+    this.index = ((this.index-1)+data.length)%data.length;
+    this.menuData = data[this.index];
+}
+form() {
+throw new Error('Method not implemented.');
+}
+
   
-  menuData =  {
-    restaurantName: "Turkish Delight",
-    imageUrl: "../../../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg", // Ensure this path is correct
-    menu: {
-      coldAppetizers: [
-        { name: "Humus", price: "₺" },
-        { name: "Cacık", price: "₺" }
-      ],
-      hotAppetizers: [
-        { name: "Sigara Börek", description: "Cigar Borek - Thin Pastry", price: "₺" }
-      ],
-      mainCourses: [
-        { name: "Adana Kebap", price: "₺" },
-        { name: "Tavuk Döner", description: "Chicken Döner", price: "₺" },
-        { name: "Pide Kaşarlı", description: "Pide with Cheese", price: "₺" }
-      ],
-      desserts: [
-        { name: "Baklava", price: "₺" }
-      ],
-      drinks: [
-        { name: "Türk Kahvesi", price: "₺" },
-        { name: "Ayran", price: "₺" }
-      ]
-    }
-  };
 
 
 }

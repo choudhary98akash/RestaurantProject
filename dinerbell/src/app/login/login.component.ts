@@ -56,7 +56,11 @@ export class LoginComponent{
     if(this.isValidEmail(this.email)){
       const response =  await this.otpService.sendOTP(this.email).then((response)=>{
         console.log(response);
-        alert('OTP has been sent successfully.')
+        if(response!==undefined){
+        alert('OTP has been sent successfully.')}
+        else{
+        alert('Eror While sending OTP');
+        }
         this.codeGenerated = response;
         this.enableSendButton();
       }).catch(error=>{

@@ -8,7 +8,15 @@
           <span>{{ item.price }}</span>
         </div>
       </div>
-      <a href="#" class="reserve-btn">Reserve A Table</a>
-    </div>
+           <a (click)="form()" class="reserve-btn">Reserve A Table</a>
+      </div>
     <div class="image" [style.backgroundImage]="'url(' + menuData.imageUrl + ')'"></div>
+  </div>
+  <div class="arrow-direction">
+    <span class="left-arrow" (click)="moveleft()">
+      <img src="../../../assets/images/arrow_back_ios_24dp_FILL0_wght700_GRAD-25_opsz40.png" alt="left" width="60px">
+    </span>
+    <span class="right-arrow" (click)="moveright()">
+      <img src="../../../assets/images/arrow_forward_ios_24dp_FILL0_wght700_GRAD-25_opsz24.png" alt="left" width="60px">
+    </span>
   </div>
