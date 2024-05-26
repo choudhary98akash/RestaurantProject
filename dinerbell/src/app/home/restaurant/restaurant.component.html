@@ -1,1 +1,14 @@
-<p>restaurant works!</p>
+<div class="card">
+    <div class="menu">
+      <h2>{{ menuData.restaurantName }}</h2>
+      <div class="menu-section" *ngFor="let section of menuData.menu | keyvalue">
+        <h3>{{ section.key | titlecase }}</h3>
+        <div class="menu-item" *ngFor="let item of section.value">
+          <span>{{ item.name }}</span>
+          <span>{{ item.price }}</span>
+        </div>
+      </div>
+      <a href="#" class="reserve-btn">Reserve A Table</a>
+    </div>
+    <div class="image" [style.backgroundImage]="'url(' + menuData.imageUrl + ')'"></div>
+  </div>

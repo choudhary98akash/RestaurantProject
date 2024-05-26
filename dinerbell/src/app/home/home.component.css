@@ -34,8 +34,7 @@
 }
 
 .footer{
-    position: absolute;
-    bottom: 0%;
+    position: relative;
     background-color: white;
     display: flex;
     justify-content: center;
