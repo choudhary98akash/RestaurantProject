@@ -1,7 +1,7 @@
 export const data = [
     {
       restaurantName: "Turkish Delight",
-      imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+      imageUrl: "../assets/images/rest1.jpg",
       menu: {
         coldAppetizers: [
           { name: "Humus", price: "₺" },
@@ -26,7 +26,7 @@ export const data = [
     },
     {
       restaurantName: "Istanbul Grill",
-            imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+            imageUrl: "../assets/images/rest2.jpg",
       menu: {
         coldAppetizers: [
           { name: "Babagannuş", price: "₺" },
@@ -51,7 +51,7 @@ export const data = [
     },
     {
       restaurantName: "Anatolian Cuisine",
-            imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+            imageUrl: "../assets/images/rest3.jpg",
       menu: {
         coldAppetizers: [
           { name: "Patlıcan Salatası", price: "₺" },
@@ -76,7 +76,7 @@ export const data = [
     },
     {
       restaurantName: "Ottoman Feast",
-            imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+            imageUrl: "../assets/images/rest4.jpg",
       menu: {
         coldAppetizers: [
           { name: "Tarama", price: "₺" },
@@ -101,7 +101,7 @@ export const data = [
     },
     {
       restaurantName: "Sultan's Table",
-            imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+            imageUrl: "../assets/images/rest5.jpg",
       menu: {
         coldAppetizers: [
           { name: "Zeytinyağlı Enginar", price: "₺" },
@@ -126,7 +126,7 @@ export const data = [
     },
     {
         restaurantName: "Ephesus Delights",
-              imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+              imageUrl: "../assets/images/rest6.jpg",
         menu: {
           coldAppetizers: [
             { name: "Yoğurtlu Patlıcan", price: "₺" },
@@ -151,7 +151,7 @@ export const data = [
       },
       {
         restaurantName: "Bosphorus Bistro",
-              imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+              imageUrl: "../assets/images/rest7.jpg",
         menu: {
           coldAppetizers: [
             { name: "Acılı Ezme", price: "₺" },
@@ -176,7 +176,7 @@ export const data = [
       },
       {
         restaurantName: "Galata Tower Cafe",
-              imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+              imageUrl: "../assets/images/rest8.jpg",
         menu: {
           coldAppetizers: [
             { name: "Havuç Tarator", price: "₺" },
@@ -201,7 +201,7 @@ export const data = [
       },
       {
         restaurantName: "Cappadocia Cuisine",
-              imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+              imageUrl: "../assets/images/rest9.jpg",
         menu: {
           coldAppetizers: [
             { name: "Antep Ezmesi", price: "₺" },
@@ -226,7 +226,7 @@ export const data = [
       },
       {
         restaurantName: "Pamukkale Plates",
-              imageUrl: "../assets/images/ali-inay-y3aP9oo9Pjc-unsplash.jpg",
+              imageUrl: "../assets/images/rest10.jpg",
         menu: {
           coldAppetizers: [
             { name: "Humus", price: "₺" },
