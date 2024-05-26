@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -9,13 +9,26 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
-verify() {
-throw new Error('Method not implemented.');
-}
+export class LoginComponent{
+
   login = false;
   email = '';
   otp = '';
+  isEmailValid = false;
+  isOtpValid = false;
+
+
+  constructor (
+  ){}
+
+
+  verify() {
+  // throw new Error('Method not implemented.');
+  }
+  sendOTP(){
+    
+  }
+
 
   showLogin(){
     this.login = true;

@@ -17,6 +17,45 @@
     align-items: center;
     justify-content: center;
 }
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Keyframes for Enhanced Drop and Settle Animation */
+@keyframes vibrantDropAndSettle {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    30% {
+      transform: translateY(50px);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    70% {
+      transform: translateY(20px);
+    }
+    80% {
+      transform: translateY(-10px);
+    }
+    90% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Applying Animation to Elements */
+  .title .head, 
+  .title .head-lower {
+    animation: vibrantDropAndSettle 1.5s ease-out;
+  }
+  
 .head{
     margin-top: -50%;
     font-size: 4.5rem;
@@ -28,6 +67,45 @@
     color: white;
     font-family: 'Georgia';
 }
+.head, .head-lower {
+    display: inline-block;
+    transition: transform 4s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .lower-container{
     display: flex;
     width: 100%;
@@ -39,39 +117,54 @@
     display: flex;
     align-items: center;
 }
-.btn-book{
+/* Button Style */
+.btn-book {
     background-color: black;
-    padding:10px 15px;
+    padding: 10px 15px;
     color: white;
-    font-size:2.5rem;
+    font-size: 2.5rem;
     cursor: pointer;
     border-radius: 2px;
     margin: 0px 20px;
-}
-.btn-book:hover{
-    transform: scale(1.3);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  /* Keyframes for Grow Animation */
+  @keyframes grow {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(1.5);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  /* Keyframes for Vibrate Animation */
+  @keyframes vibrate {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-2px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(2px);
+    }
+  }
+  
+  /* Applying Animation on Click */
+  .btn-book:active {
+    animation: growAndVibrate 0.6s ease-out;
+  }
+  
+  /* Applying Animation on Hover */
+  .btn-book:hover {
+    animation: vibrate 0.8s ease-in-out infinite;
+  }
 
 
 
@@ -142,4 +235,9 @@ button{
 
 .field{
     margin: 8px 0px;
+}
+
+
+.img-logo{
+    margin-bottom: 20px;
 }
