@@ -27,7 +27,7 @@
                 </div>
                 <!-- <div class="email-container"> -->
                     <input  class='field' type="text" placeholder="Enter email" name='email' [(ngModel)] = 'email' required>
-                <button (click)="sendOTP()" class='field'>Send OTP</button>
+                <button [disabled]="disableSendOTP" (click)="sendOTP()" class='field'>Send OTP</button>
                 <!-- </div> -->
                 <!-- <div class="otp-container"> -->
                     <input  class='field' type="text" placeholder="Enter OTP" name ='otp' [(ngModel)] = 'otp' required>

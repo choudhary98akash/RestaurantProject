@@ -1,1 +1,25 @@
-<p>home works!</p>
+<div class="container-home">
+    <div class="head">
+        <span class="logo">
+            <img src="../../assets/images/logo_DinerBell.png" alt="logo" height="40px">
+        </span>
+        <span class="nav-bar">
+            <span class="nav-items"  (click)="showRestaurant()">
+                RESTAURANTS
+            </span>
+
+            <span class="nav-items" (click)="showAboutUs()">
+                ABOUT US
+            </span>
+        </span>
+    </div>
+</div>
+<div class="main-content">
+    <app-restaurant *ngIf="restaurant"></app-restaurant>
+    <app-about-us *ngIf="!restaurant"></app-about-us>
+</div>
+<footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Diner Bell. All rights reserved.</p>
+    </div>
+  </footer>
