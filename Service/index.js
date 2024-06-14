@@ -1,7 +1,6 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
-
 const app = express();
 const port = 3000;
 app.use(express.json());
@@ -21,6 +20,9 @@ app.post('/sendOtp', async (req, res) => {
     res.status(500).json({ error: 'Failed to call Google Apps Script' });
   }
 });
+
+
+
 
 // Start the server
 app.listen(port, () => {
